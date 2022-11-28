@@ -1,0 +1,13 @@
+<p [ngClass]="got ? 'mass' : 'loose'">ossd works!</p>
+
+<p [ngStyle]="styles">Hero</p>
+
+<ul *ngFor="let number of lists">
+    <li>{{number}}</li>
+</ul>
+
+<div [ngSwitch]="choice">
+    <h1 *ngSwitchCase="1">Vasa</h1>
+    <h1 *ngSwitchCase="2">Mass</h1>
+    <h1 *ngSwitchDefault="6">Bye</h1>
+</div>

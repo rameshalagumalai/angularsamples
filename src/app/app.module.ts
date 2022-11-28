@@ -2,13 +2,21 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { OssdComponent } from './ossd/ossd.component';
+import { FormsComponent } from './forms/forms.component';
+import { FormsModule } from '@angular/forms';
+import { BindingComponent } from './binding/binding.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    OssdComponent,
+    FormsComponent,
+    BindingComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

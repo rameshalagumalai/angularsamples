@@ -1,0 +1,8 @@
+<form #login="ngForm" (ngSubmit)="handleSubmit(login.value)">
+    <input type="text" name="email" placeholder="email" ngModel />
+    <input type="text" name="name" placeholder="name" ngModel />
+    <input type="submit" />
+</form>
+
+<h1>Email : {{email}}</h1>
+<h1>Email : {{name}}</h1>
